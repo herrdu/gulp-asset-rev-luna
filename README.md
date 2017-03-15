@@ -1,4 +1,5 @@
-## gulp-asset-rev
+
+## gulp-asset-rev-luna
 
 a plugin for gulp.js to replace file's name by adding content hash
 
