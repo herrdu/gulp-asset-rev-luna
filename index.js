@@ -38,18 +38,12 @@ module.exports = function(options) {
         var content = file.contents.toString();
 
         var filePath = path.dirname(file.path);
-        console.log(filePath);
-
 
         for (var type in ASSET_REG) {
-            console.log(type);
             if (type === "BACKGROUND" && !/\.(css|scss|less)$/.test(file.path)) {
 
             } else {
                 content = content.replace(ASSET_REG[type], function(str, tag, src) {
-                    console.log("str：" + str);
-                    console.log("tag：" + tag);
-                    console.log("src：" + src);
                     src = src.replace(/(^['"]|['"]$)/g, '');
 
                     if (!/\.[^\.]+$/.test(src)) {
