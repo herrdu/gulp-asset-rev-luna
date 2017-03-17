@@ -1,6 +1,6 @@
 {
   "name": "gulp-asset-rev-luna",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "replace asset's filename by adding file hash",
   "license": "MIT",
   "repository": {
